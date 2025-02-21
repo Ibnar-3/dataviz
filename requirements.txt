@@ -2,6 +2,5 @@ streamlit
 plotly
 numpy
 pandas
-os
 plotly.express
 plotly.graph_objects
