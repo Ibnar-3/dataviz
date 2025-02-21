@@ -8,8 +8,8 @@ import random
 
 script_path = os.path.abspath(__file__)
 script_dir = os.path.dirname(script_path)
-data_path = os.path.join(script_dir, 'data\survery_results_cleaned.csv')
-aux_data_path = os.path.join(script_dir, 'data\QUESTION_KEY.csv')
+data_path = os.path.join(script_dir, 'survery_results_cleaned.csv')
+aux_data_path = os.path.join(script_dir, 'QUESTION_KEY.csv')
 
 st.set_page_config(layout="wide")
 
