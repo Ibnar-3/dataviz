@@ -110,10 +110,10 @@ for i, col in enumerate(normalized_data.columns):
 
 fig2.update_layout(barmode='stack',
                 xaxis_title=sngl_qst,
-                yaxis_title="Age Group",
+                yaxis_title="Political Affiliation",
                  yaxis=dict(
                     tickvals=list(range(len(normalized_data.index))),
-                    ticktext=list(normalized_data.index[:-1]) + [f"<b><span style='color:black'>{normalized_data.index[-1]}</b>"]
+                    ticktext=list(normalized_data.index[:-1]) + [f"<b>{normalized_data.index[-1]}</b>"]
                 ),
                 legend_title="Categories",
                 width=1000,
@@ -180,8 +180,8 @@ fig.add_trace(go.Scatter(
 ))
 
 fig.update_layout(
-    title="Real average spendings on a cup of coffee vs maximum spendings, by age group",
-    xaxis_title="Age Group",
+    title="Real average spendings on a cup of coffee vs maximum spendings, by political affiliation",
+    xaxis_title="Political Affialiation",
     yaxis_title="Price",
     yaxis=dict(range=[0, 1.15*dumbell_df[["Actual spendings", "Maximum spendings"]].max().max()])  
 )
